@@ -24,7 +24,7 @@ function parsePrice(text: string): number {
 }
 
 function loadTestData(): TestData {
-  const filePath = path.resolve(process.cwd(), 'test-data', 'ecommerce-data.json');
+  const filePath = path.resolve(process.cwd(), 'tests', 'test-data', 'ecommerce-data.json');
   const raw = fs.readFileSync(filePath, 'utf-8');
   return JSON.parse(raw) as TestData;
 }
