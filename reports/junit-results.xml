@@ -1,0 +1,127 @@
+<testsuites id="" name="" tests="6" failures="1" skipped="1" errors="0" time="49.067818">
+<testsuite name="demo-webshop-data-driven-login.spec.ts" timestamp="2026-03-09T22:48:53.982Z" hostname="" tests="1" failures="1" skipped="0" time="0.101" errors="0">
+<testcase name="Data-driven Demo Web Shop workflow with login, preconditions, and postconditions" classname="demo-webshop-data-driven-login.spec.ts" time="0.101">
+<failure message="demo-webshop-data-driven-login.spec.ts:143:5 Data-driven Demo Web Shop workflow with login, preconditions, and postconditions" type="FAILURE">
+<![CDATA[  demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions 
+
+    Error: ENOENT: no such file or directory, open 'C:\Users\lewow\Documents\Workspace\Testavimas\1task\test-data\ecommerce-data.json'
+
+      26 | function loadTestData(): TestData {
+      27 |   const filePath = path.resolve(process.cwd(), 'test-data', 'ecommerce-data.json');
+    > 28 |   const raw = fs.readFileSync(filePath, 'utf-8');
+         |                  ^
+      29 |   return JSON.parse(raw) as TestData;
+      30 | }
+      31 |
+        at loadTestData (C:\Users\lewow\Documents\Workspace\Testavimas\1task\tests\demo-webshop-data-driven-login.spec.ts:28:18)
+        at C:\Users\lewow\Documents\Workspace\Testavimas\1task\tests\demo-webshop-data-driven-login.spec.ts:144:20
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="demoqa-dynamic-properties.spec.ts" timestamp="2026-03-09T22:48:53.982Z" hostname="" tests="1" failures="0" skipped="0" time="9.424" errors="0">
+<testcase name="Dynamic Properties - verify enablement, visibility, and color change" classname="demoqa-dynamic-properties.spec.ts" time="9.424">
+<system-out>
+<![CDATA[Step 1: Open DemoQA homepage
+Step 2: Open Elements section
+Step 3: Open Dynamic Properties page
+Step 4: Verify initial state
+Initial colorChange class: mt-4 btn btn-primary
+Step 5: Wait until the disabled button becomes enabled
+Step 6: Wait until the hidden button becomes visible
+Step 7: Wait until the color change button style/class changes
+Updated colorChange class: mt-4 text-danger btn btn-primary
+Test completed successfully
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="demoqa-progress-bar.spec.ts" timestamp="2026-03-09T22:48:53.982Z" hostname="" tests="1" failures="0" skipped="0" time="12.073" errors="0">
+<testcase name="Progress Bar start, stop, complete, and reset" classname="demoqa-progress-bar.spec.ts" time="12.073">
+<system-out>
+<![CDATA[Step 1: Open DemoQA homepage
+Step 2: Open Widgets section
+Step 3: Open Progress Bar page
+Step 4: Verify initial state
+Step 5: Start progress
+Step 6: Wait until progress reaches at least 40%
+Step 7: Stop progress
+Stopped at: 49%
+Step 8: Resume progress
+Step 9: Wait until progress reaches 100%
+Step 10: Verify Reset button is visible
+Step 11: Reset progress
+Step 12: Verify progress returns to 0%
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="demoqa-webtables.spec.ts" timestamp="2026-03-09T22:48:53.982Z" hostname="" tests="1" failures="0" skipped="0" time="12.824" errors="0">
+<testcase name="Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1" classname="demoqa-webtables.spec.ts" time="12.824">
+<system-out>
+<![CDATA[Step 1: Open DemoQA homepage
+Step 2: Open Elements section
+Step 3: Open Web Tables page
+Step 4: Read current table state
+Initial populated rows: 3
+Rows per page: 10
+Records needed to create page 2: 8
+Step 5: Add enough records to create a second page
+Adding record: auto.user1@example.com
+Adding record: auto.user2@example.com
+Adding record: auto.user3@example.com
+Adding record: auto.user4@example.com
+Adding record: auto.user5@example.com
+Adding record: auto.user6@example.com
+Adding record: auto.user7@example.com
+Adding record: auto.user8@example.com
+Step 6: Navigate to page 2
+Step 7: Delete record on page 2: auto.user8@example.com
+Step 8: Verify pagination returns to page 1 and total pages becomes 1
+Test completed successfully
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ecommerce-workflow.spec.ts" timestamp="2026-03-09T22:48:53.982Z" hostname="" tests="1" failures="0" skipped="0" time="5.847" errors="0">
+<testcase name="Add multiple products above 900 USD to cart, update quantity, and verify subtotal" classname="ecommerce-workflow.spec.ts" time="5.847">
+<system-out>
+<![CDATA[Step 1: Open homepage
+Precondition: cleaning shopping cart
+Step 2: Collect candidate products from category pages
+Scanning category: https://demowebshop.tricentis.com/notebooks
+Candidate found: 14.1-inch Laptop | price: 1590
+Scanning category: https://demowebshop.tricentis.com/desktops
+Candidate found: Build your own computer | price: 1200
+Candidate found: Build your own expensive computer | price: 1800
+Candidate found: Elite Desktop PC | price: 1350
+Step 3: Add two qualifying products to cart
+Opening product page: 14.1-inch Laptop
+Notification for 14.1-inch Laptop: The product has been added to your shopping cart
+Added successfully: 14.1-inch Laptop
+Opening product page: Build your own computer
+Notification for Build your own computer: The product has been added to your shopping cart
+Added successfully: Build your own computer
+Added products:
+- 14.1-inch Laptop | 1590
+- Build your own computer | 1200
+Step 4: Open shopping cart
+Step 5: Verify both selected products are present in cart
+Step 6: Update quantity of the first product from 1 to 2
+Step 7: Verify arithmetic for each cart row
+Row 1: unit=1590, qty=2, subtotal=3180
+Row 2: unit=1250, qty=1, subtotal=1250
+Calculated cart total from row subtotals: 4430
+Step 8: Clean cart after test
+Test completed successfully
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2026-03-09T22:48:53.982Z" hostname="" tests="1" failures="0" skipped="1" time="5.392" errors="0">
+<testcase name="Application home page should be opened" classname="homepage.spec.ts" time="5.392">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

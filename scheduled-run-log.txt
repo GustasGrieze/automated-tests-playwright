@@ -1,0 +1,732 @@
+================================================== 
+[Tue 03/10/2026  0:20:46.66] Scheduled test run started 
+
+Running 6 tests using 6 workers
+
+[1A[2K[1/6] tests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+[1A[2K[2/6] tests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+[1A[2K[3/6] tests\1task\demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions
+[1A[2K[4/6] tests\1task\homepage.spec.ts:3:5 › Application home page should be opened
+[1A[2K[5/6] tests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+[1A[2K[6/6] tests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 1: Open DemoQA homepage
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 1: Open DemoQA homepage
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Step 1: Open homepage
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 1: Open DemoQA homepage
+
+[1A[2K  1) tests\1task\demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions 
+
+    Error: ENOENT: no such file or directory, open 'C:\Users\lewow\Documents\Workspace\Testavimas\1task\test-data\ecommerce-data.json'
+
+      26 | function loadTestData(): TestData {
+      27 |   const filePath = path.resolve(process.cwd(), 'test-data', 'ecommerce-data.json');
+    > 28 |   const raw = fs.readFileSync(filePath, 'utf-8');
+         |                  ^
+      29 |   return JSON.parse(raw) as TestData;
+      30 | }
+      31 |
+        at loadTestData (C:\Users\lewow\Documents\Workspace\Testavimas\1task\tests\1task\demo-webshop-data-driven-login.spec.ts:28:18)
+        at C:\Users\lewow\Documents\Workspace\Testavimas\1task\tests\1task\demo-webshop-data-driven-login.spec.ts:144:20
+
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 2: Open Widgets section
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 2: Open Elements section
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Precondition: cleaning shopping cart
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 3: Open Progress Bar page
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 3: Open Dynamic Properties page
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 2: Open Elements section
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Step 2: Collect candidate products from category pages
+
+[1A[2KScanning category: https://demowebshop.tricentis.com/notebooks
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 4: Verify initial state
+
+[1A[2KStep 5: Start progress
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 4: Verify initial state
+
+[1A[2KInitial colorChange class: mt-4 btn btn-primary
+
+[1A[2KStep 5: Wait until the disabled button becomes enabled
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 3: Open Web Tables page
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 6: Wait until progress reaches at least 40%
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Candidate found: 14.1-inch Laptop | price: 1590
+
+[1A[2KScanning category: https://demowebshop.tricentis.com/desktops
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 4: Read current table state
+
+[1A[2KInitial populated rows: 3
+
+[1A[2KRows per page: 10
+
+[1A[2KRecords needed to create page 2: 8
+
+[1A[2KStep 5: Add enough records to create a second page
+
+[1A[2KAdding record: auto.user1@example.com
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 6: Wait until the hidden button becomes visible
+
+[1A[2KStep 7: Wait until the color change button style/class changes
+
+[1A[2KUpdated colorChange class: mt-4 text-danger btn btn-primary
+
+[1A[2KTest completed successfully
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 7: Stop progress
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Candidate found: Build your own computer | price: 1200
+
+[1A[2KCandidate found: Build your own expensive computer | price: 1800
+
+[1A[2KCandidate found: Elite Desktop PC | price: 1350
+
+[1A[2KStep 3: Add two qualifying products to cart
+
+[1A[2KOpening product page: 14.1-inch Laptop
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Stopped at: 49%
+
+[1A[2KStep 8: Resume progress
+
+[1A[2KStep 9: Wait until progress reaches 100%
+
+[1A[2KStep 10: Verify Reset button is visible
+
+[1A[2KStep 11: Reset progress
+
+[1A[2KStep 12: Verify progress returns to 0%
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Adding record: auto.user2@example.com
+
+[1A[2K  2) tests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error Context: test-results\1task-demoqa-webtables-Cre-d1cd6-agination-returns-to-page-1\error-context.md
+
+
+[1A[2K  3) tests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+
+[1A[2K  3 failed
+    tests\1task\demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions 
+    tests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1 
+    tests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal 
+  3 passed (37.4s)
+
+[36m  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.[39m
+Terminate batch job (Y/N)? 
+^C[Tue 03/10/2026  0:22:18.16] Scheduled test run finished 
+================================================== 
+ 
+================================================== 
+[Tue 03/10/2026  0:22:23.38] Scheduled test run started 
+
+Running 6 tests using 6 workers
+
+[1A[2K[1/6] tests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+[1A[2K[2/6] tests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+[1A[2K[3/6] tests\1task\demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions
+[1A[2K[4/6] tests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+[1A[2K[5/6] tests\1task\homepage.spec.ts:3:5 › Application home page should be opened
+[1A[2K[6/6] tests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 1: Open DemoQA homepage
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 1: Open DemoQA homepage
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 1: Open DemoQA homepage
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Step 1: Open homepage
+
+[1A[2K  1) tests\1task\demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions 
+
+    Error: ENOENT: no such file or directory, open 'C:\Users\lewow\Documents\Workspace\Testavimas\1task\test-data\ecommerce-data.json'
+
+      26 | function loadTestData(): TestData {
+      27 |   const filePath = path.resolve(process.cwd(), 'test-data', 'ecommerce-data.json');
+    > 28 |   const raw = fs.readFileSync(filePath, 'utf-8');
+         |                  ^
+      29 |   return JSON.parse(raw) as TestData;
+      30 | }
+      31 |
+        at loadTestData (C:\Users\lewow\Documents\Workspace\Testavimas\1task\tests\1task\demo-webshop-data-driven-login.spec.ts:28:18)
+        at C:\Users\lewow\Documents\Workspace\Testavimas\1task\tests\1task\demo-webshop-data-driven-login.spec.ts:144:20
+
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 2: Open Elements section
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 2: Open Elements section
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 3: Open Web Tables page
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 3: Open Dynamic Properties page
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 4: Read current table state
+
+[1A[2KInitial populated rows: 3
+
+[1A[2KRows per page: 10
+
+[1A[2KRecords needed to create page 2: 8
+
+[1A[2KStep 5: Add enough records to create a second page
+
+[1A[2KAdding record: auto.user1@example.com
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 4: Verify initial state
+
+[1A[2KInitial colorChange class: mt-4 btn btn-primary
+
+[1A[2KStep 5: Wait until the disabled button becomes enabled
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Precondition: cleaning shopping cart
+
+[1A[2KStep 2: Collect candidate products from category pages
+
+[1A[2KScanning category: https://demowebshop.tricentis.com/notebooks
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Adding record: auto.user2@example.com
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Candidate found: 14.1-inch Laptop | price: 1590
+
+[1A[2KScanning category: https://demowebshop.tricentis.com/desktops
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 2: Open Widgets section
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Candidate found: Build your own computer | price: 1200
+
+[1A[2KCandidate found: Build your own expensive computer | price: 1800
+
+[1A[2KCandidate found: Elite Desktop PC | price: 1350
+
+[1A[2KStep 3: Add two qualifying products to cart
+
+[1A[2KOpening product page: 14.1-inch Laptop
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 3: Open Progress Bar page
+
+[1A[2KStep 4: Verify initial state
+
+[1A[2KStep 5: Start progress
+
+[1A[2KStep 6: Wait until progress reaches at least 40%
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Adding record: auto.user3@example.com
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 6: Wait until the hidden button becomes visible
+
+[1A[2KStep 7: Wait until the color change button style/class changes
+
+[1A[2KUpdated colorChange class: mt-4 text-danger btn btn-primary
+
+[1A[2KTest completed successfully
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Adding record: auto.user4@example.com
+
+[1A[2KAdding record: auto.user5@example.com
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 7: Stop progress
+
+[1A[2KStopped at: 41%
+
+[1A[2KStep 8: Resume progress
+
+[1A[2KStep 9: Wait until progress reaches 100%
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Adding record: auto.user6@example.com
+
+[1A[2KAdding record: auto.user7@example.com
+
+[1A[2KAdding record: auto.user8@example.com
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 10: Verify Reset button is visible
+
+[1A[2KStep 11: Reset progress
+
+[1A[2KStep 12: Verify progress returns to 0%
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 6: Navigate to page 2
+
+[1A[2KStep 7: Delete record on page 2: auto.user8@example.com
+
+[1A[2KStep 8: Verify pagination returns to page 1 and total pages becomes 1
+
+[1A[2KTest completed successfully
+
+[1A[2K  2) tests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error Context: test-results\1task-ecommerce-workflow-A-37885-uantity-and-verify-subtotal\error-context.md
+
+
+[1A[2K  2 failed
+    tests\1task\demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions 
+    tests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal 
+  4 passed (35.2s)
+
+[36m  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.[39m
+Terminate batch job (Y/N)? 
+^C[Tue 03/10/2026  0:25:02.91] Scheduled test run finished 
+================================================== 
+ 
+================================================== 
+[Tue 03/10/2026  0:25:04.36] Scheduled test run started 
+
+Running 6 tests using 6 workers
+
+[1A[2K[1/6] tests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+[1A[2K[2/6] tests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+[1A[2K[3/6] tests\1task\demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions
+[1A[2K[4/6] tests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+[1A[2K[5/6] tests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+[1A[2K[6/6] tests\1task\homepage.spec.ts:3:5 › Application home page should be opened
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 1: Open DemoQA homepage
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Step 1: Open homepage
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 1: Open DemoQA homepage
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 1: Open DemoQA homepage
+
+[1A[2K  1) tests\1task\demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions 
+
+    Error: ENOENT: no such file or directory, open 'C:\Users\lewow\Documents\Workspace\Testavimas\1task\test-data\ecommerce-data.json'
+
+      26 | function loadTestData(): TestData {
+      27 |   const filePath = path.resolve(process.cwd(), 'test-data', 'ecommerce-data.json');
+    > 28 |   const raw = fs.readFileSync(filePath, 'utf-8');
+         |                  ^
+      29 |   return JSON.parse(raw) as TestData;
+      30 | }
+      31 |
+        at loadTestData (C:\Users\lewow\Documents\Workspace\Testavimas\1task\tests\1task\demo-webshop-data-driven-login.spec.ts:28:18)
+        at C:\Users\lewow\Documents\Workspace\Testavimas\1task\tests\1task\demo-webshop-data-driven-login.spec.ts:144:20
+
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 2: Open Widgets section
+
+[1A[2KStep 3: Open Progress Bar page
+
+[1A[2KStep 4: Verify initial state
+
+[1A[2KStep 5: Start progress
+
+[1A[2KStep 6: Wait until progress reaches at least 40%
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 2: Open Elements section
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 2: Open Elements section
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 3: Open Web Tables page
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Precondition: cleaning shopping cart
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 3: Open Dynamic Properties page
+
+[1A[2KStep 4: Verify initial state
+
+[1A[2KInitial colorChange class: mt-4 btn btn-primary
+
+[1A[2KStep 5: Wait until the disabled button becomes enabled
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 4: Read current table state
+
+[1A[2KInitial populated rows: 3
+
+[1A[2KRows per page: 10
+
+[1A[2KRecords needed to create page 2: 8
+
+[1A[2KStep 5: Add enough records to create a second page
+
+[1A[2KAdding record: auto.user1@example.com
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Step 2: Collect candidate products from category pages
+
+[1A[2KScanning category: https://demowebshop.tricentis.com/notebooks
+
+[1A[2KCandidate found: 14.1-inch Laptop | price: 1590
+
+[1A[2KScanning category: https://demowebshop.tricentis.com/desktops
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 7: Stop progress
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Candidate found: Build your own computer | price: 1200
+
+[1A[2KCandidate found: Build your own expensive computer | price: 1800
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Stopped at: 41%
+
+[1A[2KStep 8: Resume progress
+
+[1A[2Ktests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Candidate found: Elite Desktop PC | price: 1350
+
+[1A[2KStep 3: Add two qualifying products to cart
+
+[1A[2KOpening product page: 14.1-inch Laptop
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 9: Wait until progress reaches 100%
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Adding record: auto.user2@example.com
+
+[1A[2KAdding record: auto.user3@example.com
+
+[1A[2Ktests\1task\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 6: Wait until the hidden button becomes visible
+
+[1A[2KStep 7: Wait until the color change button style/class changes
+
+[1A[2KUpdated colorChange class: mt-4 text-danger btn btn-primary
+
+[1A[2KTest completed successfully
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Adding record: auto.user4@example.com
+
+[1A[2KAdding record: auto.user5@example.com
+
+[1A[2Ktests\1task\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 10: Verify Reset button is visible
+
+[1A[2KStep 11: Reset progress
+
+[1A[2KStep 12: Verify progress returns to 0%
+
+[1A[2Ktests\1task\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Adding record: auto.user6@example.com
+
+[1A[2KAdding record: auto.user7@example.com
+
+[1A[2KAdding record: auto.user8@example.com
+
+[1A[2KStep 6: Navigate to page 2
+
+[1A[2KStep 7: Delete record on page 2: auto.user8@example.com
+
+[1A[2KStep 8: Verify pagination returns to page 1 and total pages becomes 1
+
+[1A[2KTest completed successfully
+
+[1A[2K  2) tests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+
+[1A[2K  2 failed
+    tests\1task\demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions 
+    tests\1task\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal 
+  4 passed (37.2s)
+
+[36m  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.[39m
+Terminate batch job (Y/N)? 
+^CThe syntax of the command is incorrect.
+================================================== 
+[Tue 03/10/2026  0:46:39.47] Scheduled test run started 
+Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+
+[1A[2K
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m
+[Tue 03/10/2026  0:46:41.84] Scheduled test run finished 
+================================================== 
+ 
+================================================== 
+[Tue 03/10/2026  0:48:34.96] Scheduled test run started 
+Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+
+[1A[2K
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m
+[Tue 03/10/2026  0:48:37.36] Scheduled test run finished 
+================================================== 
+ 
+================================================== 
+[Tue 03/10/2026  0:48:51.70] Scheduled test run started 
+
+Running 6 tests using 1 worker
+
+[1A[2K[1/6] tests\demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions
+[1A[2K  1) tests\demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions 
+
+    Error: ENOENT: no such file or directory, open 'C:\Users\lewow\Documents\Workspace\Testavimas\1task\test-data\ecommerce-data.json'
+
+      26 | function loadTestData(): TestData {
+      27 |   const filePath = path.resolve(process.cwd(), 'test-data', 'ecommerce-data.json');
+    > 28 |   const raw = fs.readFileSync(filePath, 'utf-8');
+         |                  ^
+      29 |   return JSON.parse(raw) as TestData;
+      30 | }
+      31 |
+        at loadTestData (C:\Users\lewow\Documents\Workspace\Testavimas\1task\tests\demo-webshop-data-driven-login.spec.ts:28:18)
+        at C:\Users\lewow\Documents\Workspace\Testavimas\1task\tests\demo-webshop-data-driven-login.spec.ts:144:20
+
+
+[1A[2K[2/6] tests\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+[1A[2Ktests\demoqa-dynamic-properties.spec.ts:3:5 › Dynamic Properties - verify enablement, visibility, and color change
+Step 1: Open DemoQA homepage
+
+[1A[2KStep 2: Open Elements section
+
+[1A[2KStep 3: Open Dynamic Properties page
+
+[1A[2KStep 4: Verify initial state
+
+[1A[2KInitial colorChange class: mt-4 btn btn-primary
+
+[1A[2KStep 5: Wait until the disabled button becomes enabled
+
+[1A[2KStep 6: Wait until the hidden button becomes visible
+
+[1A[2KStep 7: Wait until the color change button style/class changes
+
+[1A[2KUpdated colorChange class: mt-4 text-danger btn btn-primary
+
+[1A[2KTest completed successfully
+
+[1A[2K[3/6] tests\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+[1A[2Ktests\demoqa-progress-bar.spec.ts:3:5 › Progress Bar start, stop, complete, and reset
+Step 1: Open DemoQA homepage
+
+[1A[2KStep 2: Open Widgets section
+
+[1A[2KStep 3: Open Progress Bar page
+
+[1A[2KStep 4: Verify initial state
+
+[1A[2KStep 5: Start progress
+
+[1A[2KStep 6: Wait until progress reaches at least 40%
+
+[1A[2KStep 7: Stop progress
+
+[1A[2KStopped at: 49%
+
+[1A[2KStep 8: Resume progress
+
+[1A[2KStep 9: Wait until progress reaches 100%
+
+[1A[2KStep 10: Verify Reset button is visible
+
+[1A[2KStep 11: Reset progress
+
+[1A[2KStep 12: Verify progress returns to 0%
+
+[1A[2K[4/6] tests\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+[1A[2Ktests\demoqa-webtables.spec.ts:42:5 › Create second page in Web Tables, delete record from page 2, and verify pagination returns to page 1
+Step 1: Open DemoQA homepage
+
+[1A[2KStep 2: Open Elements section
+
+[1A[2KStep 3: Open Web Tables page
+
+[1A[2KStep 4: Read current table state
+
+[1A[2KInitial populated rows: 3
+
+[1A[2KRows per page: 10
+
+[1A[2KRecords needed to create page 2: 8
+
+[1A[2KStep 5: Add enough records to create a second page
+
+[1A[2KAdding record: auto.user1@example.com
+
+[1A[2KAdding record: auto.user2@example.com
+
+[1A[2KAdding record: auto.user3@example.com
+
+[1A[2KAdding record: auto.user4@example.com
+
+[1A[2KAdding record: auto.user5@example.com
+
+[1A[2KAdding record: auto.user6@example.com
+
+[1A[2KAdding record: auto.user7@example.com
+
+[1A[2KAdding record: auto.user8@example.com
+
+[1A[2KStep 6: Navigate to page 2
+
+[1A[2KStep 7: Delete record on page 2: auto.user8@example.com
+
+[1A[2KStep 8: Verify pagination returns to page 1 and total pages becomes 1
+
+[1A[2KTest completed successfully
+
+[1A[2K[5/6] tests\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+[1A[2Ktests\ecommerce-workflow.spec.ts:109:5 › Add multiple products above 900 USD to cart, update quantity, and verify subtotal
+Step 1: Open homepage
+
+[1A[2KPrecondition: cleaning shopping cart
+
+[1A[2KStep 2: Collect candidate products from category pages
+
+[1A[2KScanning category: https://demowebshop.tricentis.com/notebooks
+
+[1A[2KCandidate found: 14.1-inch Laptop | price: 1590
+
+[1A[2KScanning category: https://demowebshop.tricentis.com/desktops
+
+[1A[2KCandidate found: Build your own computer | price: 1200
+
+[1A[2KCandidate found: Build your own expensive computer | price: 1800
+
+[1A[2KCandidate found: Elite Desktop PC | price: 1350
+
+[1A[2KStep 3: Add two qualifying products to cart
+
+[1A[2KOpening product page: 14.1-inch Laptop
+
+[1A[2KNotification for 14.1-inch Laptop: The product has been added to your shopping cart
+
+[1A[2KAdded successfully: 14.1-inch Laptop
+
+[1A[2KOpening product page: Build your own computer
+
+[1A[2KNotification for Build your own computer: The product has been added to your shopping cart
+
+[1A[2KAdded successfully: Build your own computer
+
+[1A[2KAdded products:
+
+[1A[2K- 14.1-inch Laptop | 1590
+
+[1A[2K- Build your own computer | 1200
+
+[1A[2KStep 4: Open shopping cart
+
+[1A[2KStep 5: Verify both selected products are present in cart
+
+[1A[2KStep 6: Update quantity of the first product from 1 to 2
+
+[1A[2KStep 7: Verify arithmetic for each cart row
+
+[1A[2KRow 1: unit=1590, qty=2, subtotal=3180
+
+[1A[2KRow 2: unit=1250, qty=1, subtotal=1250
+
+[1A[2KCalculated cart total from row subtotals: 4430
+
+[1A[2KStep 8: Clean cart after test
+
+[1A[2KTest completed successfully
+
+[1A[2K[6/6] tests\homepage.spec.ts:3:5 › Application home page should be opened
+Terminate batch job (Y/N)? [1A[2K  2) tests\homepage.spec.ts:3:5 › Application home page should be opened ───────────────────────────
+
+    Test was interrupted.
+
+    Error: page.waitForTimeout: Target page, context or browser has been closed
+
+      6 |   await expect(page.locator('.header-logo')).toBeVisible();
+      7 |
+    > 8 |   await page.waitForTimeout(5000);
+        |              ^
+      9 | });
+        at C:\Users\lewow\Documents\Workspace\Testavimas\1task\tests\homepage.spec.ts:8:14
+
+    Error: browserContext.close: Target page, context or browser has been closed
+
+
+[1A[2K  1 failed
+    tests\demo-webshop-data-driven-login.spec.ts:143:5 › Data-driven Demo Web Shop workflow with login, preconditions, and postconditions 
+  1 interrupted
+    tests\homepage.spec.ts:3:5 › Application home page should be opened ────────────────────────────
+  4 passed (49.1s)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m
+
+^C[Tue 03/10/2026  0:49:45.15] Scheduled test run finished 
+================================================== 
+ 

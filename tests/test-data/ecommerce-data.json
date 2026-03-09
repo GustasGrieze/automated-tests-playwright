@@ -1,0 +1,13 @@
+{
+  "baseUrl": "https://demowebshop.tricentis.com",
+  "credentials": {
+    "email": "zdynebly@gmail.com",
+    "password": "asdasd"
+  },
+  "sourcePages": [
+    "/notebooks",
+    "/desktops"
+  ],
+  "priceThreshold": 900,
+  "productsToAdd": 2
+}
