@@ -215,12 +215,15 @@ test('Add multiple products above 900 USD to cart, update quantity, and verify s
   const firstRow = cartRows.filter({ hasText: firstProduct.name }).first();
   const firstQtyInput = firstRow.locator('input.qty-input');
 
+  // Verification 9 - default quantity check
+  await expect(firstQtyInput).toHaveValue('1');
+
   await firstQtyInput.fill('2');
 
   const updateCartButton = page.getByRole('button', { name: /Update shopping cart/i });
   await updateCartButton.click();
 
-  // Verification 9
+  // Verification 10
   await expect(firstQtyInput).toHaveValue('2');
 
   console.log('Step 7: Verify arithmetic for each cart row');
@@ -242,7 +245,7 @@ test('Add multiple products above 900 USD to cart, update quantity, and verify s
     const subtotalText = (await row.locator('.product-subtotal').innerText()).trim();
     const subtotal = parsePrice(subtotalText);
 
-    // Verification 10 - arithmetic verification
+    // Verification 11 - arithmetic verification
     expect(subtotal).toBe(unitPrice * quantity);
 
     calculatedTotal += subtotal;
@@ -263,7 +266,7 @@ test('Add multiple products above 900 USD to cart, update quantity, and verify s
 
   await page.getByRole('button', { name: /Update shopping cart/i }).click();
 
-  // Verification 11
+  // Verification 12
   await expect(page.locator('.order-summary-content')).toContainText('Your Shopping Cart is empty!');
 
   console.log('Test completed successfully');

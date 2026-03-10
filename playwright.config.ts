@@ -15,5 +15,9 @@ export default defineConfig({
     browserName: 'chromium',
     headless: true,
     trace: 'on-first-retry',
+    launchOptions: {
+      slowMo: 10,
+      args: ['--start-maximized'],
+    },
   },
 });

@@ -1,27 +1,27 @@
-# Test Case – Progress Bar Widget
+# Test Case – Dynamic Properties
 
 ## Test Case Information
 
 | Attribute | Value |
 |---|---|
-| **Test Case ID** | TC_WIDGETS_001 |
-| **Title** | Verify Progress Bar start, stop, completion, and reset behavior |
+| **Test Case ID** | TC_DYNAMIC_001 |
+| **Title** | Verify delayed enablement, visibility, and style change on Dynamic Properties page |
 | **Target Application** | https://demoqa.com/ |
-| **Module** | Widgets / Progress Bar |
-| **Objective** | Verify that the Progress Bar starts correctly, can be stopped before completion, reaches 100% when resumed, and resets to 0%. |
+| **Module** | Elements / Dynamic Properties |
+| **Objective** | Verify that dynamic properties update correctly after page load: the disabled button becomes enabled, the hidden button becomes visible, and the color change button changes its style. |
 | **Test Type** | Functional UI Test |
 | **Scenario Type** | Positive / Happy Path |
-| **Preconditions** | Application is accessible and the user can open the Progress Bar widget page. |
-| **Test Data** | Target intermediate value: 40% |
-| **Expected Result** | The progress bar starts, stops before 100%, resumes to 100%, and resets back to 0%. |
-| **Postconditions** | Progress Bar is reset to initial state. |
+| **Preconditions** | Application is accessible and the Dynamic Properties page can be opened. |
+| **Test Data** | No external input data required. |
+| **Expected Result** | Dynamic elements change state correctly after the expected delay. |
+| **Postconditions** | Page remains loaded with updated dynamic elements. |
 | **Priority** | High |
 
 ---
 
 ## Test Scenario
 
-The user opens the Progress Bar widget, starts the progress, stops it around 40%, verifies that it stopped before completion, resumes progress to 100%, verifies that the Reset button appears, and then resets the bar to 0%.
+The user opens the Dynamic Properties page, verifies the initial states of the dynamic elements, waits for the delayed changes to occur, and verifies that the button becomes enabled, the hidden button becomes visible, and the color-changing button updates its style.
 
 ---
 
@@ -31,28 +31,22 @@ The user opens the Progress Bar widget, starts the progress, stops it around 40%
 |---|---|---|
 | 1 | Open browser. | Browser opens successfully. |
 | 2 | Navigate to `https://demoqa.com/`. | DemoQA homepage is displayed. |
-| 3 | Open the **Widgets** section. | Widgets section is opened. |
-| 4 | Click **Progress Bar** in the left menu. | Progress Bar page is displayed. |
-| 5 | Verify that the progress value is `0%`. | Initial progress value is `0%`. |
-| 6 | Verify that the **Start** button is visible. | Start button is displayed. |
-| 7 | Click **Start**. | Progress bar begins increasing. |
-| 8 | Wait until the progress value reaches at least `40%`. | Progress reaches `40%` or more. |
-| 9 | Click **Stop**. | Progress bar stops increasing. |
-| 10 | Verify that the progress value is greater than or equal to `40%`. | Progress value is at least `40%`. |
-| 11 | Verify that the progress value is less than `100%`. | Progress has not yet completed. |
-| 12 | Click **Start** again. | Progress bar resumes. |
-| 13 | Wait until the progress value becomes `100%`. | Progress reaches `100%`. |
-| 14 | Verify that the **Reset** button is visible. | Reset button is displayed. |
-| 15 | Click **Reset**. | Progress bar returns to initial state. |
-| 16 | Verify that the progress value is `0%`. | Progress resets to `0%`. |
+| 3 | Open the **Elements** section. | Elements section is opened. |
+| 4 | Click **Dynamic Properties** in the left menu. | Dynamic Properties page is displayed. |
+| 5 | Verify that the **Will enable 5 seconds** button is disabled initially. | Button is visible and disabled. |
+| 6 | Verify that the **Color Change** button is visible. | Color Change button is displayed. |
+| 7 | Verify that the **Visible After 5 Seconds** button is not visible initially. | Delayed visibility button is hidden. |
+| 8 | Capture the initial style/class of the **Color Change** button. | Initial style/class value is stored. |
+| 9 | Wait until the **Will enable 5 seconds** button becomes enabled. | Button becomes enabled. |
+| 10 | Verify that the **Visible After 5 Seconds** button appears. | Button becomes visible. |
+| 11 | Verify that the **Color Change** button style/class changes from the initial value. | Button style/class is updated. |
 
 ---
 
 ## Verifications
 
-1. Progress value is initially `0%`.
-2. Progress value reaches at least `40%` after starting.
-3. Progress value remains below `100%` after stopping.
-4. Progress value reaches `100%` after resuming.
-5. Reset button appears at completion.
-6. Progress value returns to `0%` after reset.
+1. **Will enable 5 seconds** button is initially disabled.
+2. **Will enable 5 seconds** button becomes enabled after delay.
+3. **Visible After 5 Seconds** button is initially hidden.
+4. **Visible After 5 Seconds** button becomes visible after delay.
+5. **Color Change** button style/class changes after delay.

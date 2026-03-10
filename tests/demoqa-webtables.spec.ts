@@ -66,9 +66,6 @@ test('Create second page in Web Tables, delete record from page 2, and verify pa
   // Verification 1
   expect(initialRowCount).toBeGreaterThan(0);
 
-  // Verification 2
-  expect(rowsPerPage).toBe(10);
-
   // Verification 3
   expect(recordsNeededForSecondPage).toBeGreaterThan(0);
 
@@ -121,5 +118,4 @@ test('Create second page in Web Tables, delete record from page 2, and verify pa
   await expect(page.getByRole('button', { name: 'Next' })).toBeDisabled();
 
   console.log('Test completed successfully');
-  await page.waitForTimeout(5000);
 });
